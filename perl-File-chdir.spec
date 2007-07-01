@@ -1,7 +1,7 @@
 %define	module	File-chdir
 %define	name	perl-%{module}
-%define	version	0.06
-%define	release	2mdk
+%define	version	0.08
+%define	release	1
 
 Summary:	A more sensible way to change directories
 Name:		%{name}
