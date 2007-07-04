@@ -1,20 +1,19 @@
 %define	module	File-chdir
 %define	name	perl-%{module}
 %define	version	0.08
-%define	release	1
+%define	release	%mkrel 1
 
-Summary:	A more sensible way to change directories
 Name:		%{name}
 Version:	%{version}
 Release:	%{release}
+Summary:	A more sensible way to change directories
 License:	GPL or Artistic
 Group:		Development/Perl
-Source0:	%{module}-%{version}.tar.bz2
 Url:		http://search.cpan.org/dist/%{module}
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot/
+Source:     http://www.cpan.org/modules/by-module/File/%{module}-%{version}.tar.bz2
 Buildrequires:	perl-devel
-Requires:	perl 
 Buildarch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 Perl's chdir() has the unfortunate problem of being very, very, very
