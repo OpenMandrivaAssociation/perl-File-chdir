@@ -13,7 +13,6 @@ Url:		http://search.cpan.org/dist/%{module}
 Source:     http://www.cpan.org/modules/by-module/File/%{module}-%{version}.tar.bz2
 Buildrequires:	perl-devel
 Buildarch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 Perl's chdir() has the unfortunate problem of being very, very, very
