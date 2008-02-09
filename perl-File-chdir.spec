@@ -1,6 +1,6 @@
 %define	module	File-chdir
 %define	name	perl-%{module}
-%define	version	0.09
+%define	version	0.10
 %define	release	%mkrel 1
 
 Name:		%{name}
