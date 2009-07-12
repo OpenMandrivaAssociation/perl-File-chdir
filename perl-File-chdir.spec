@@ -1,17 +1,16 @@
-%define	module	File-chdir
-%define	name	perl-%{module}
-%define	version	0.10
-%define	release	%mkrel 4
+%define	upstream_name	 File-chdir
+%define	upstream_version 0.1002
 
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:		perl-%{upstrea_name}
+Version:	%perl_convert_version %{upstream_version}
+Release:	%mkrel 1
+
 Summary:	A more sensible way to change directories
-License:	GPL or Artistic
+License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{module}
-Source:     http://www.cpan.org/modules/by-module/File/%{module}-%{version}.tar.bz2
-Buildrequires:	perl-devel
+Url:		http://search.cpan.org/dist/%{upstream_name}
+Source0:    http://www.cpan.org/modules/by-module/File/%{upstream_name}-%{upstream_version}.tar.gz
+
 Buildarch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}
 
@@ -25,7 +24,7 @@ File::chdir gives you an alternative, $CWD and @CWD.  These two
 variables combine all the power of C<chdir()>, File::Spec and Cwd.
 
 %prep
-%setup -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
