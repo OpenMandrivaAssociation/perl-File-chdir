@@ -1,7 +1,7 @@
 %define	upstream_name	 File-chdir
 %define	upstream_version 0.1002
 
-Name:		perl-%{upstrea_name}
+Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
 Release:	%mkrel 1
 
