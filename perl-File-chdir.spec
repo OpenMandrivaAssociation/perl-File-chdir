@@ -1,5 +1,5 @@
 %define	upstream_name	 File-chdir
-%define	upstream_version 0.1002
+%define upstream_version 0.1004
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
@@ -28,8 +28,10 @@ variables combine all the power of C<chdir()>, File::Spec and Cwd.
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
-make
-make test
+%make
+
+%check
+%make test
 
 %install
 rm -rf $RPM_BUILD_ROOT
