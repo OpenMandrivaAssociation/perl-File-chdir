@@ -1,15 +1,15 @@
 %define	upstream_name	 File-chdir
-%define upstream_version 0.1004
+%define upstream_version 0.1008
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Version:	%perl_convert_version 0.1008
+Release:	1
 
 Summary:	A more sensible way to change directories
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/File/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/File/File-chdir-0.1008.tar.gz
 
 BuildRequires:	perl-devel
 BuildArch:	noarch
@@ -89,4 +89,5 @@ perl Makefile.PL INSTALLDIRS=vendor
 * Wed Jan 28 2004 Lenny Cartier <lenny@mandrakesoft.com> 0.06-1mdk
 - from Robin Rosenberg <robin.rosenberg@dewire.com> :
 	- initial contrib import. Needed for building Captive-NTFS
+
 
