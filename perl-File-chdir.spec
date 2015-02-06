@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version 0.1008
-Release:	2
+Release:	3
 
 Summary:	A more sensible way to change directories
 License:	GPL+ or Artistic
