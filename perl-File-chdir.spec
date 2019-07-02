@@ -1,15 +1,15 @@
 %define	upstream_name	 File-chdir
-%define upstream_version 0.1008
+%define upstream_version 0.1010
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version 0.1008
-Release:	3
+Version:	%perl_convert_version 0.1010
+Release:	1
 
 Summary:	A more sensible way to change directories
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/File/File-chdir-0.1008.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/File/File-chdir-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildArch:	noarch
@@ -28,13 +28,10 @@ variables combine all the power of C<chdir()>, File::Spec and Cwd.
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
-%make
-
-%check
-%make test
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files 
 %doc Changes
