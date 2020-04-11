@@ -9,7 +9,7 @@ Summary:	A more sensible way to change directories
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/File-chdir-{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/File-chdir-%{upstream_version}.tar.gz
 #Old
 #Source0:	http://www.cpan.org/modules/by-module/File/File-chdir-%{upstream_version}.tar.gz
 
