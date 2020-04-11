@@ -1,15 +1,17 @@
 %define	upstream_name	 File-chdir
-%define upstream_version 0.1010
+%define upstream_version 0.1011
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version 0.1010
+Version:	%perl_convert_version 0.1011
 Release:	1
 
 Summary:	A more sensible way to change directories
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/File/File-chdir-%{upstream_version}.tar.gz
+Sources:	https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/File-chdir-{upstream_version}.tar.gz
+#Old
+#Source0:	http://www.cpan.org/modules/by-module/File/File-chdir-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildArch:	noarch
