@@ -2,7 +2,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	0.1011
-Release:	1
+Release:	2
 
 Summary:	A more sensible way to change directories
 License:	GPL+ or Artistic
