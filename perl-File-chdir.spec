@@ -12,6 +12,7 @@ Source0:	https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/File-chdir-%{version
 #Old
 #Source0:	http://www.cpan.org/modules/by-module/File/File-chdir-%{version}.tar.gz
 
+BuildRequires:	make
 BuildRequires:	perl-devel
 BuildArch:	noarch
 
